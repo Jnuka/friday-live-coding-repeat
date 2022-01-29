@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Jnuka/friday-live-coding-repeat/issues"
   },
-  "homepage": "https://github.com/Jnuka/friday-live-coding-repeat#readme"
+  "homepage": "https://github.com/Jnuka/friday-live-coding-repeat#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }
