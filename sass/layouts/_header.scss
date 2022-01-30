@@ -8,6 +8,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include media-tablet {
+        padding-left: 24px;
+    }
+}
+
+.header__logo-line {
+    display: flex;
+    @include media-mobile {
+        justify-content: center;
+        flex-grow: 1;
+        position: relative;
+    }
+}
+
+.header__hamburger {
+    margin-left: 37px;
+    @include media-mobile {
+        position: absolute;
+        left: 0;
+    }
 }
 
 .header__buttons {
@@ -16,5 +36,8 @@
         &:first-child {            
             margin-left: 0px;
         }
-    }        
+    }
+    @include media-mobile {
+        display: none;
+    }
 }

@@ -2,23 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Friday live coding</title>
-    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+    <title>Friday live coding</title>    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <a href="#" class="logo">
-                <object data="./img/logo.svg" type="Image/svg+xml" class="logo-object">
-                    You brouzer dont support svg files.
-                </object>                
-            </a>
-            
+            <div class="header__logo-line">
+                <span class="header__hamburger hamburger">
+                    <span class="hamburger__line"></span>
+                </span>
+                <a href="#" class="logo">
+                    <object  class="logo-object" data="./img/logo.svg" type="Image/svg+xml">
+                        Your browser does not support SVG.
+                    </object>                
+                </a>
+            </div>            
             <nav class="header__navigation">
                 <ul class="navigation">
                     <li class="navigation__link">Home</li>
@@ -52,7 +53,7 @@
     <section class="tools">
         <div class="wrapper tools_wrapper">
             <h2 class="tools__title">We design tools to unveil your superpowers</h2>
-            <div class="layout-4-column">
+            <div class="layout-4-column tool-container">
                  <div class="tool">
                      <div class="tool__icon">
                          <span class="icon-square icon-square_violet">
@@ -136,7 +137,7 @@
                         </div>  
                     </div>                    
                 </article>
-                <article class="strategy block-shadowed">
+                <article class="strategy strategy_wide block-shadowed">
                     <img class="strategy__image" src="./img/strategies/4.jpg" alt="strategy">
                     <div class="strategy__content">
                         <h3 class="strategy__name">Success Steps For Your Personal Or Business Life Plus Funny Image on the Back</h3>
@@ -164,30 +165,30 @@
         <div class="wrapper">
             <h2 class="about-us__title">About Us</h2>
             <p class="about-us__discription">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
-            <div class="layout-3-column">
+            <div class="layout-3-column employee-container">
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__name">Kathy Rosenberg</h5>
                         <p class="employee__title">Product Manager</p>
-                        <a href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
+                        <a class="employee__contact" href="mailto:kathyr@gmail.com">kathyr@gmail.com</a>
                     </div>
-                    <img src="./img/employees/kathy.png" alt="Kathy Rosenberg">
+                    <img class="employee__photo" src="./img/employees/kathy.png" alt="Kathy Rosenberg">
                 </div>
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__name">Alexandra Boyarskaya</h5>
                         <p class="employee__title">Support Marketing Specialist</p>
-                        <a href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
+                        <a class="employee__contact" href="mailto:alexandrab@gmail.com">alexandrab@gmail.com</a>
                     </div>
-                    <img src="./img/employees/alexandra.png" alt="Alexandra Boyarskaya">
+                    <img class="employee__photo" src="./img/employees/alexandra.png" alt="Alexandra Boyarskaya">
                 </div>
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__name">Melani Amini</h5>
                         <p class="employee__title">Photographer</p>
-                        <a href="mailto:melania@gmail.com">melania@gmail.com</a>
+                        <a class="employee__contact" href="mailto:melania@gmail.com">melania@gmail.com</a>
                     </div>
-                    <img src="./img/employees/melani.png" alt="Melani Amini">
+                    <img class="employee__photo" src="./img/employees/melani.png" alt="Melani Amini">
                 </div>
             </div>
         </div>
@@ -195,14 +196,16 @@
     <section class="contact-us">
         <div class="wrapper">
             <h2 class="contact-us__title">Contact Us</h2>
-            <div class="layout-2-column">
+            <div class="layout-2-column contact-us-container">
                 <div class="contact-us__content">
                     <p class="contact-us__text">Your About Us page is vital. It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
                     <p class="contact-us__link">
-                        <span class="ico ico__phone"></span> <a href="tel:+375223451111">+375 (22) 345-00-99</a>
+                        <span class="icon-round icon-round_white"><span class="ico ico_phone"></span></span> 
+                        <a href="tel:+375223451111">+375 (22) 345-00-99</a>
                     </p>
                     <p class="contact-us__link">
-                        <span class="ico ico__letter"></span> <a href="mailto:emailname@gmail.com">emailname@gmail.com</a>
+                        <span class="icon-round icon-round_white"><span class="ico ico_letter"></span></span>
+                        <a href="mailto:emailname@gmail.com">emailname@gmail.com</a>
                     </p>
                 </div>
                 <div class="contact-us__form">
@@ -222,7 +225,11 @@
     </section>
     <footer class="footer">
         <div class="wrapper footer__wrapper">
-            <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
+            <a href="#" class="logo">
+                <object  class="logo-object" data="./img/logo.svg" type="Image/svg+xml">
+                    Your browser does not support SVG.
+                </object>                
+            </a>
             <div class="footer-navigation layout-3-column">
                 <div class="footer-navigation__column">
                     <h4 class="footer-navigation__title">Quick Links</h4>

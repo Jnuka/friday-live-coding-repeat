@@ -13,3 +13,9 @@
         color: $color-additional;
     }
 }
+
+.header__navigation {
+    @include media-tablet {
+        display: none;
+    }
+}
