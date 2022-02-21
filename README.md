@@ -1,1 +1,1 @@
-# friday-live-coding-repeat
+# https://jnuka.github.io/friday-live-coding-repeat/

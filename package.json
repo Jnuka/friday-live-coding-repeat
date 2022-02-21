@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "sass --watch sass/style.scss sass/style.css",
+    "style": "sass --watch src/sass/style.scss src/sass/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +17,8 @@
     "url": "https://github.com/Jnuka/friday-live-coding-repeat/issues"
   },
   "homepage": "https://github.com/Jnuka/friday-live-coding-repeat#readme",
-  "dependencies": {
-    "normalize-scss": "^7.0.1"
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
   }
 }

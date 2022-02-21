@@ -5,6 +5,11 @@
 .layout-3-column {
     @include columns($width: 30%); 
     // @include columns($width: calc(33.3% - 34px)); 
+    &:after {
+        content: '';
+        width: 30%;
+        display: block;
+    }
 }
 
 .layout-4-column {
